@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nueva encuesta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <form id="frmEncuesta" action="../src/encuesta/index.php?action=insert" method="post">
+                <label for="nombre">Nombre de la encuesta:</label>
+                <input type="text" name="nombre" required="" :value="nombre">
+                <label for="descripcion">Nombre de la encuesta:</label>
+                <input type="text" name="descripcion" required="" :value="descripcion">
+                <input type="submit" value="Crear">
+            </form>
+        </div>
+        
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data:{
+                    nombre:"hola",
+                    descripcion : "hola"
+                },
+                mounted:function(){
+                    this.insertar()
+                },
+                methods:{
+                    insertar:function(){
+                        console.log("Insertar")
+                        axios.post("../src/encuesta/index.php?action=insert")
+                                .then(function(response){
+                                    console.log(response)
+                                })
+                    }
+                }
+            })
+        </script>
+        
+    </body>
+</html>

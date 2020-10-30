@@ -1,0 +1,163 @@
+{
+    "nombre": "Encuesta de test",
+    "descripcion": "Esta es una encuesta para prueba del servicio de creación de encuestas",
+    "activo":true,
+    "createdAt":"2020-09-09 12:00:00",
+    "updatedAt":null,
+    "secciones":[
+        {
+            "nombre":"Sección de datos personales",
+            "descripcion":"En esta sección registraremos sus datos personales",
+            "orden":1,
+            "activo":true,
+            "createdAt":"2020-09-09 12:00:00",
+            "updatedAt":null,
+            "preguntas":[
+                {
+                    "nombre":"Pregunta 1",
+                    "descripcion":"Escriba su nombre",
+                    "orden":1,
+                    "tipoPreguntaId":1,
+                    "activo":true,
+                    "createdAt":"2020-09-09 12:00:00",
+                    "updatedAt":null,
+                    "opciones":[
+                        {
+                            "nombre":"nombre encuestado",
+                            "descripcion":"Registro del nombre del participante",
+                            "orden":1,
+                            "valor":0,
+                            "esCorrecta":1,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        }
+                    ]
+                },
+                {
+                    "nombre":"Pregunta 2",
+                    "descripcion":"Escriba su edad",
+                    "orden":2,
+                    "tipoPreguntaId":2,
+                    "activo":true,
+                    "createdAt":"2020-09-09 12:00:00",
+                    "updatedAt":null,
+                    "opciones":[
+                        {
+                            "nombre":"edad del encuestado",
+                            "descripcion":"Registro de la edad del participante",
+                            "orden":1,
+                            "valor":0,
+                            "esCorrecta":1,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nombre":"Sección Ciencias Naturales",
+            "descripcion":"En esta sección realizaremos preguntas sobre las ciencias naturales",
+            "orden":2,
+            "activo":true,
+            "createdAt":"2020-09-09 12:00:00",
+            "updatedAt":null,
+            "preguntas":[
+                {
+                    "nombre":"Estados de la materia",
+                    "descripcion":"¿Cuáles son los estados de la naturaleza?",
+                    "orden":1,
+                    "tipoPreguntaId":3,
+                    "activo":true,
+                    "createdAt":"2020-09-09 12:00:00",
+                    "updatedAt":null,
+                    "opciones":[
+                        {
+                            "nombre":"Sólido",
+                            "descripcion":"",
+                            "orden":1,
+                            "valor":1,
+                            "esCorrecta":1,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        },
+                        {
+                            "nombre":"Puro",
+                            "descripcion":"",
+                            "orden":2,
+                            "valor":0,
+                            "esCorrecta":0,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        },
+                        {
+                            "nombre":"Líquido",
+                            "descripcion":"",
+                            "orden":3,
+                            "valor":1,
+                            "esCorrecta":1,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        },
+                        {
+                            "nombre":"Suave",
+                            "descripcion":"",
+                            "orden":3,
+                            "valor":0,
+                            "esCorrecta":0,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        }
+                    ]
+                },
+                {
+                    "nombre":"Descripción de seres vivos",
+                    "descripcion":"¿A qué reino pertenece el caballo?",
+                    "orden":2,
+                    "tipoPreguntaId":5,
+                    "activo":true,
+                    "createdAt":"2020-09-09 12:00:00",
+                    "updatedAt":null,
+                    "opciones":[
+                        {
+                            "nombre":"Reino vegetal",
+                            "descripcion":"",
+                            "orden":0,
+                            "valor":0,
+                            "esCorrecta":0,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        },
+                        {
+                            "nombre":"Reino animal",
+                            "descripcion":"",
+                            "orden":0,
+                            "valor":1,
+                            "esCorrecta":1,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        },
+                        {
+                            "nombre":"Reino mineral",
+                            "descripcion":"",
+                            "orden":0,
+                            "valor":0,
+                            "esCorrecta":0,
+                            "activo":true,
+                            "createdAt":"2020-09-09 12:00:00",
+                            "updatedAt":null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
